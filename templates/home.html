@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For Resposive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NRI - Wellbeing Services</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static',filename='images/nri.png')}}">
+
+
+    <!-- Main style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+    <!-- responsive style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/responsive.css')}}">
+
+
+    <!-- Fix Internet Explorer ______________________________________-->
+
+    <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="{{url_for('static',filename='vendor/html5shiv.js')}}"></script>
+        <![endif]-->
+
+</head>
+
+<body>
+    <div class="main-page-wrapper">
+        
+        <div id="myModal" class="modal">
+    <img class="modal-content" id="myImg" src="{{url_for('static',filename='assets/img/fest.jpeg')}}">
+  <span class="close">&times;</span>
+  </div>
+        
+        <script>/*script for the popup*/
+            var modal = document.getElementById("myModal");
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            function hidePopUp() {
+	              modal.style.display="none";
+            }
+            setTimeout(hidePopUp,4000);
+        </script>
+      
+
+        <!-- Header _________________________________ -->
+        <header>
+            <div class="container clear-fix">
+                <div class="right-side float-left">
+                       <marquee>
+    <p>It’s an ISO Certified Company - This Platform is especially designed to cater each & every need of a Non Resident Indian in Telangana & Andhra Pradesh States.</p>
+
+   </marquee>
+
+                    </div>
+                <div class="left-side float-right">
+                    <ul>
+                        <li><a href="mailto:info@nriwellbeing.com" class="tran3s"><i class="fa fa-envelope p-color" aria-hidden="true"></i> info@nriwellbeing.com</a></li>
+                        <li><a href="tel:+917036636670" class="tran3s"><i class="fa fa-phone p-color" aria-hidden="true"></i></i> +91 70 366 366 70</a> </li>
+                         <li><a href="https://wa.me/+917337548998" class="tran3s"><i class="fa fa-whatsapp p-color" aria-hidden="true"></i> +91 7337 54 8998</a> </li>
+                    </ul>
+                </div>
+                <!-- /.left-side -->
+
+            </div>
+            <!-- /.container -->
+        </header>
+
+
+        <!-- Theme Menu _________________________________ -->
+        <div class="main-menu menu-colorOne">
+            <div class="container clear-fix">
+                <a href="/" class="float-left logo"><img src="{{url_for('static',filename='images/nri-wellbeing-services.png')}}" alt=""></a>
+                <h1><span class="one"> 1 n All </span> <span class="ni">N</span>R<span class="in">I</span> WELLBEING SERVICES PVT. LTD. </h1>
+                <!-- Menu -->
+                <nav class="navbar float-right">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                           <span class="sr-only">Toggle navigation</span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                         </button>
+                    </div>
+
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class='active'><a href="/">Home</a></li>
+
+                            <li class=''><a href="/about-us">About Us</a></li>
+                             <li class=''><a href="/projects">Projects</a></li>
+
+                            <li class='dropdown-holder' class=""><a href="#">Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/properties-development" class="tran3s">Properties Development</a></li>
+
+                                    <li><a href="/facility-management" class="tran3s">Facility Management Solutions</a></li>
+
+                                    <li><a href="/property-assets-management" class="tran3s">Properties Management & Assets Management</a></li>
+
+                                    <li><a href="/family-welfare" class="tran3s">Family Welfare</a></li>
+
+                                    <li><a href="/construction-of-dream-houses" class="tran3s">Construction of Dream Homes</a></li>
+
+                                    <li><a href="/leasing-services" class="tran3s">Leasing Services</a></li>
+
+                                    <li><a href="/liaison-documentation-services" class="tran3s">Liaison and Documentation Services</a></li>
+
+                                    <li><a href="/logistics-tours-travel-services" class="tran3s">Logistics, Tours and Travel Services</a></li>
+
+                                    <li><a href="/financial-services" class="tran3s">Financial Services</a></li>
+                                     <li><a href="/onboardservices" class="tran3s">On Board Services At Airport</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class=''><a href="/faqs">FAQ's</a></li>
+
+                            <li class=''><a class="en-btn" href="/enquiry">Enquiry</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+
+
+            </div>
+        </div>
+        <!-- /.main-menu -->
+        <!-- Theme Banner ________________________________ -->
+        <div id="banner">
+            <div class="rev_slider_wrapper">
+                <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
+                <div id="main-banner-slider" class="rev_slider" data-version="5.0.7">
+                    <ul>
+
+                        <!-- SLIDE1  -->
+                        <li data-index="rs-280" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-saveperformance="off" data-title="Intro" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{url_for('static',filename='images/slide-1.jpg')}}" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0"
+                                data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                             <div class="tp-caption tp-resizeme bl-c" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-84','-84','-64','-102']" data-width="none" data-height="none" data-transform_idle="o:1;"
+                                data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5;">
+                                <h1>Property Development<br>
+
+                                    <span class="p-color">For us, It's a cup of TEA.</span><br>Multiply the appreciation and develop<br> to the next level of income source</h1>
+                            </div>
+
+
+
+
+                             <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['70','205','145','100']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;"
+                                data-start="4000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="/properties-development" class="p-color-bg our-project font-fix">READ MORE</a>
+                            </div>
+
+                        </li>
+
+                        <!-- SLIDE2  -->
+                        <li data-index="rs-18" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="{{url_for('static',filename='images/slide-2.jpg')}}" data-rotate="0" data-saveperformance="off" data-title="Wellbeing Services"
+                            data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{url_for('static',filename='images/slide-2.jpg')}}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
+                                data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                           <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-84','-84','-64','-102']" data-width="none" data-height="none" data-transform_idle="o:1;"
+                                data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5;">
+                                <h1>Healthcare <span class="p-color">Services</span> </h1>
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme p-si" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-8','-8','18','-35']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
+                                data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <p>You no longer need to worry about your family NOW,<br> they get the best of emergency care and<br> medical assistance on time WITH US.</p>
+                            </div>
+
+
+
+                            <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','145','80']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;"
+                                data-start="4000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="/family-welfare" class="p-color-bg our-project font-fix">READ MORE</a>
+                            </div>
+                        </li>
+
+                        <!-- SLIDE2  -->
+                        <li data-index="rs-19" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="{{url_for('static',filename='images/slide-3.jpg')}}" data-rotate="0" data-saveperformance="off" data-title="Wellbeing Services"
+                            data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{url_for('static',filename='images/slide-3.jpg')}}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
+                                data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                             <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-84','-84','-64','-102']" data-width="none" data-height="none" data-transform_idle="o:1;"
+                                data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5;">
+                                <h1>Properties & <span class="p-color">Asset Management</span> </h1>
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme p-si" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-8','-8','18','-35']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
+                                data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <p>WORRIED that you can't take care of your properties and assets?<br> Let us take care of all your WORRIES.</p>
+                            </div>
+
+
+
+                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','145','100']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;"
+                                data-start="4000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="/properties-management-assets-management" class="p-color-bg our-project font-fix">READ MORE</a>
+                            </div>
+                        </li>
+
+
+                        <!-- SLIDE2  -->
+                        <li data-index="rs-20" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="{{url_for('static',filename='images/slide-4.jpg')}}" data-rotate="0" data-saveperformance="off" data-title="Wellbeing Services"
+                            data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{url_for('static',filename='images/slide-4.jpg')}} " alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
+                                data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                          <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-84','-84','-64','-102']" data-width="none" data-height="none" data-transform_idle="o:1;"
+                                data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5;">
+                                <h1>Liaison & <span class="p-color">Documentation Services</span> </h1>
+                            </div>
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-resizeme p-si" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-8','-8','18','-35']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
+                                data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <p>On your behalf, for everything we will put<br> present ourselves in YOUR SHOES to serve you<br> at our best by providing support to YOUR FAMILY.</p>
+                            </div>
+
+ <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','145','100']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;"
+                                data-start="4000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="/liaison-documentation-services" class="p-color-bg our-project font-fix">READ MORE</a>
+                            </div>
+                        </li>
+
+                        <!-- SLIDE2  -->
+                        <li class="lasbanner" data-index="rs-21" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="{{url_for('static',filename='images/slide5.jpg')}}" data-rotate="0" data-saveperformance="off" data-title="Wellbeing Services"
+                            data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{url_for('static',filename='images/slide5.jpg')}}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
+                                data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                              <div class="tp-caption tp-resizeme" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-84','-84','-64','-102']" data-width="none" data-height="none" data-transform_idle="o:1;"
+                                data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5;">
+                                <h1>Logistics & <span class="p-color">Travel</span> </h1>
+                            </div>
+                            <!-- LAYER NR. 2 -->
+                           <div class="tp-caption tp-resizeme p-si" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-8','-8','18','-35']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];"
+                                data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                                <p>will play an important role in the daily life, <br> We assists every where to save your.<br> time and complete the job.</p>
+                            </div>
+                           <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','145','100']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;"
+                                data-start="4000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="/logistics-tours-travel-services" class="p-color-bg our-project font-fix">READ MORE</a>
+                            </div>
+                        </li>
+
+                          <!-- SLIDE2  -->
+                        <li class="lasbanner" data-index="rs-22" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="{{url_for('static',filename='images/slide6.jpg')}}" data-rotate="0" data-saveperformance="off" data-title="Wellbeing Services"
+                            data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="{{url_for('static',filename='images/slide6.jpg')}}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0"
+                                data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-resizeme" data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-84','-84','-64','-102']" data-width="none" data-height="none" data-transform_idle="o:1;"
+                                data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5;">
+                                <h1 style="text-align: right; color:#000;"> Construction Consultancy  <br> <span class="p-color">and Supervision Services</span> </h1>
+                            </div>
+
+                             <div class="tp-caption" data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['50','50','145','100']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+                                data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(114, 168, 0, 1.00);cursor:pointer;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power2.easeInOut;"
+                                data-start="4000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                <a href="/construction-of-dream-homes" class="p-color-bg our-project font-fix">READ MORE</a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <!-- END REVOLUTION SLIDER -->
+        </div>
+        <!--  /#banner -->
+        <!-- Manage Section _________________________ -->
+        <div class="theme-manage-area colorOne">
+            <div class="container">
+                <div class="content-wrapper clear-fix">
+                    <div class="single-item float-left p-color-bg item1">
+                        <img src="{{url_for('static',filename='images/nri.png')}}" class="n-ri" alt="">
+                    </div>
+                    <!-- /.single-item -->
+
+
+                      <div class="single-item float-left item3  border-fix">
+                        <h6> Services Success Rating</h6>
+                        <img src="{{url_for('static',filename='images/christmas.jpg')}}" class="n-ri w-i c-s" alt="">
+                    </div>
+                    <!-- /.single-item -->
+
+                    <div class="single-item float-left item3 b-f border-fix">
+                        <a href="{{url_for('static',filename='iso.pdf')}}" target="_blank"><img src="{{url_for('static',filename='images/iso.png')}}" class="n-ri w-i" alt=""></a>
+
+                    </div>
+                    <!-- /.single-item -->
+
+                    <div class="single-item float-left item3">
+                        <img src="{{url_for('static',filename='images/ftcci.png')}}" class="res-p" alt="">
+                        <h6 class="mem">A member of FTCCI</h6>
+                    </div>
+                    <!-- /.single-item -->
+                </div>
+                <!-- /.content-wrapper -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.theme-manage-area -->
+
+
+
+        <!-- What We Do ______________________________ -->
+        <div class="what-we-do">
+            <div class="container">
+                <div class="theme-title wow fadeInUp">
+                    <h2>ABOUT US</h2>
+
+                    <span></span>
+                </div>
+                <!-- /.theme-title -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 wow fadeInRight float-right">
+                        <div class="text">
+                             <p>NRI Wellbeing Services is a thought of  Non Resident Indian – NRI who came back to India after staying abroad for more than a Decade and drove across so many uncomfortable situations to get done his requirements  in India. He landed back in India with an aim and great intention to relieve the NRIs from their drop back by serving all levels and make it hassle free for the NRI to Complete his works in India.</p>
+                            <p>This platform is especially designed to cater the whole needs of the Non Resident Indians. "A quite friendly organization as a one-point solution for all NRI needs in Telangana & Andhra Pradesh States, INDIA"</p>
+
+                        </div>
+                        <!-- /.text -->
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 wow fadeInLeft float-left">
+                        <img src="{{url_for('static',filename='images/2.jpg')}}" alt="Image">
+                    </div>
+                </div>
+                <div class="text-center m-t20">
+                    <a href="/about-us" class="p-color-bg our-project font-fix">READ MORE</a>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.what-we-do -->
+        <!-- Success Project _____________________ -->
+        <div class="success-project wow fadeInUp">
+            <div class="opacity">
+                <div class="container">
+                    <div class="row">
+                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 project-item">
+                            <i class="fa fa-anchor p-color" aria-hidden="true"></i>
+                            <span class="timer" data-from="10" data-to="68" data-speed="2500" data-refresh-interval="10">{{projects1}}</span>
+                            <p>SUCCESSFUL PROJECTS</p>
+                        </div>
+                        <!-- /.project-item -->
+
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 project-item">
+                            <i class="fa fa-fire p-color" aria-hidden="true"></i>
+                            <span class="timer" data-from="0" data-to="461" data-speed="2500" data-refresh-interval="20">{{clients}}</span>
+                            <p>OUR CLIENTS</p>
+                        </div>
+                        <!-- /.project-item -->
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 project-item">
+                            <i class="fa fa-smile-o p-color" aria-hidden="true"></i>
+                            <span class="timer" data-from="0" data-to="1168" data-speed="2500" data-refresh-interval="20">{{members}}</span>
+                            <p>HAPPY MEMBERS</p>
+                        </div>
+                        <!-- /.project-item -->
+                        <!-- /.project-item -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.opacity -->
+        </div>
+        <!-- /.success-project -->
+
+        <!-- Our Service ___________________________ -->
+        <div class="our-service colorOne">
+            <div class="container">
+                <div class="theme-title wow fadeInUp">
+                    <h4>OUR SERVICES</h4>
+                </div>
+                <!-- /.theme-title -->
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"> <a href="/properties-development"><img src="{{url_for('static',filename='images/services/Properties-Development.png')}}"></div>
+
+                            <h5>Properties Development </h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"> <a href="/facility-management-solutions"><img src="{{url_for('static',filename='images/services/Facility-Management-Solutions.png')}}"></div>
+
+                            <h5>Facility Management Solutions</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"> <a href="/properties-management-assets-management"><img src="{{url_for('static',filename='images/services/Properties-Management-Assets-Management.png')}}"></div>
+
+                            <h5>Properties Management & Assets Management</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"><a href="/family-welfare"><img src="{{url_for('static',filename='images/services/Family-Welfare.png')}}"></div>
+
+                            <h5>Family Welfare</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"> <a href="/construction-of-dream-homes"><img src="{{url_for('static',filename='images/services/Construction-of-Dream-Homes.png')}}"></div>
+
+                            <h5>Construction of<br> Dream Homes</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"> <a href="/leasing-services"><img src="{{url_for('static',filename='images/services/Leasing-Services.png')}}"></div>
+
+                            <h5>Leasing Services</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"> <a href="/liaison-documentation-services"><img src="{{url_for('static',filename='images/services/Liaison-Documentation-Services.png')}}"></div>
+
+                            <h5>Liaison and Documentation Services</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"><a href="/logistics-tours-travel-services"><img src="{{url_for('static',filename='images/services/LogisticsTours-Travel-Services.png')}}"></div>
+
+                            <h5>Logistics, Tours and<br> Travel Services</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"> <a href="/financial-services"><img src="{{url_for('static',filename='images/services/financial-icon.png')}}"></div>
+
+                            <h5>Financial Services</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 service-item wow fadeInUp">
+                        <div class="icon"> <a href="/onboardservices"><img src="{{url_for('static',filename='images/flight.png')}}"></div>
+
+                            <h5>On Board Services and Take off (Fly off) Services</h5>
+                        </a>
+
+                    </div>
+                    <!-- /.service-item -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.our-service -->
+
+        <!-- Testimonial _______________________ -->
+        <div class="testimonial wow fadeInUp">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="testimonial-titel">
+                        <h3>Proud to say serving customers across the globe</h3>
+                        <span class="p-color-bg"></span>
+                    </div>
+<div class="c-flags"><img src="{{url_for('static',filename='images/flag1.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag2.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag3.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag4.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag5.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag6.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag7.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag8.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag9.jpg')}}" alt="">
+<img src="{{url_for('static',filename='images/flag10.jpg')}}" alt="">
+
+</div>
+
+
+
+                </div>
+                <!-- /.content-wrapper -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.testimonial -->
+
+
+        <!-- Get Quote ___________________________ -->
+        <div class="get-quote p-color-bg wow fadeInUp">
+            <div class="container">
+                <p class="float-left">On your behalf, for everything we will put present ourselves in your<br> shoes to serve you at our best by providing support to you.</p>
+                <a href="/enquiry" class="tran3s float-right">Enquire Us</a>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.get-quote -->
+
+
+
+        <!-- Footer ______________________________ -->
+        <footer>
+            <div class="top-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12  footer-link wow fadeInUp">
+                            <h6>Our Services </h6>
+                            <ul>
+                                    <li><a href="/properties-development" class="tran3s">Properties Development</a></li>
+
+                                <li><a href="/facility-management" class="tran3s">Facility Management Solutions</a></li>
+
+                                <li><a href="/property-assets-management" class="tran3s">Properties Management & Assets Management</a></li>
+                                <li><a href="/family-welfare" class="tran3s">Family Welfare</a></li>
+                                  <li><a href="/construction-of-dream-houses" class="tran3s">Construction of Dream Homes</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.footer-blog -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer-link wow fadeInUp">
+                            <h6>&nbsp</h6>
+                            <ul>
+
+                                <li><a href="/leasing-services" class="tran3s">Leasing Services</a></li>
+                                <li><a href="/liaison-documentation-services" class="tran3s">Liaison and Documentation Services</a></li>
+                                <li><a href="/logistics-tours-travel-services" class="tran3s">Logistics, Tours and Travel Services</a></li>
+                                  <li><a href="/financial-services" class="tran3s">Financial Services</a></li>
+                                    <li><a href="/onboardservices" class="tran3s">On Board Services and Take off (Fly off) Services</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.footer-link -->
+                        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 footer-link wow fadeInUp">
+                            <h6>QUICK LINKS</h6>
+                            <ul>
+                                <li><a href="/" class="tran3s">Home</a></li>
+                                <li><a href="/about-us" class="tran3s">About Us</a></li>
+                                <li><a href="/faqs">FAQ's</a></li>
+                                <li><a href="/enquiry">Enquiry</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.footer-tag -->
+                        <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 footer-about wow fadeInUp">
+                            <h6>CORPORATE OFFICE</h6>
+                            <ul>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> <strong><span></span>    NRI Wellbeing Services Pvt. Ltd.</strong><br> # 201, RR Amruth Legancy,<br> Road No. 6, Snehapuri Colony,<br> Nacharam, Secunderabad,<br> TELANGANA, INDIA - 500 076</li>
+                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i> info@nriwellbeing.com</li>
+                                <li><i class="fa fa-phone-square" aria-hidden="true"></i> +91 70 366 366 70 </li>
+                            </ul>
+                        </div>
+                        <!-- /.footer-about -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.top-footer -->
+
+            <!-- Bottom Footer -->
+            <div class="bottom-footer">
+                <div class="container">
+                    <p>Copyright 2022 &copy; NRI Wellbeing Services <span class="p-color">|</span> Developed by <a href="https://builtintech.in/" class="tran3s" target="_blank"> BuiltinTech</a></p>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.bottom-footer -->
+        </footer>
+
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s p-color-bg">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </button>
+
+        <!-- Js File_________________________________ -->
+
+        <!-- j Query -->
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/jquery-2.1.4.js')}}"></script>
+
+        <!-- Bootstrap JS -->
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/bootstrap/bootstrap.min.js')}}"></script>
+
+        <!-- Vendor js _________ -->
+        <!-- revolution -->
+        <script src="{{url_for('static',filename='vendor/revolution/jquery.themepunch.tools.min.js')}}"></script>
+        <script src="{{url_for('static',filename='vendor/revolution/jquery.themepunch.revolution.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/revolution/revolution.extension.slideanims.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/revolution/revolution.extension.layeranimation.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/revolution/revolution.extension.navigation.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/revolution/revolution.extension.kenburn.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/revolution/revolution.extension.actions.min.js')}}"></script>
+
+        <!-- WOW js -->
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/WOW-master/dist/wow.min.js')}}"></script>
+        <!-- owl.carousel -->
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/owl-carousel/owl.carousel.min.js')}}"></script>
+        <!-- js count to -->
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/jquery.appear.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/jquery.countTo.js')}}"></script>
+        <!-- Progress Bar js -->
+        <script type="text/javascript" src="{{url_for('static',filename='vendor/skills-master/jquery.skills.js')}}"></script>
+
+        <!-- Theme js -->
+        <script type="text/javascript" src="{{url_for('static',filename='js/theme.js')}}"></script>
+
+    </div>
+    <!-- /.main-page-wrapper -->
+</body>
+
+</html>
